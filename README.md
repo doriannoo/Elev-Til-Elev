@@ -1,29 +1,24 @@
 # Elev-Til-Elev
 
-## Om prosjektet
-**Elev til Elev** er et lite skoleprosjekt som viser et konsept for en enkel nettside der elever kan hjelpe andre elever med skolearbeid. Nettsiden lar elever opprette gruppechatter med titler som forklarer hva de trenger hjelp med, for eksempel knyttet til fag eller vurderinger.
+## About the project
 
-Nettsiden er **ikke ferdiggjort**, og fungerer som en enkel prototype.
+Elev to Elev is a small school project that presents a simple website concept where students can help other students with schoolwork. The website allows users to create group chats with titles that explain what they need help with, for example related to a subject or an assessment.
 
+The website is not finished and works as a basic prototype.
 
+## Features
 
-## Funksjoner
-* Opprette gruppechatter med en beskrivende tittel
-* Søke og filtrere chatter basert på skolelinje, fag og nøkkelord
-* Enkel og oversiktlig struktur
+Create group chats with a descriptive title
+Search and filter chats by study program, subject, or keywords
+Simple and clear layout
 
+## Technologies used
+HTML
+CSS
+JavaScript
 
+## Project status
+This project is not fully developed and is missing several features. It was made as a short school project to show the idea and basic web development skills.
 
-## Teknologi brukt
-* HTML
-* CSS
-* JavaScript
-  
-
-## Status
-Prosjektet er ikke ferdig utviklet og mangler flere funksjoner. Det er laget som et kort skoleprosjekt for å vise idé og grunnleggende webutvikling.
-
-
-
-## Utvikler
-Laget av elev som del av et skoleprosjekt.
+## Developer
+Created by a student as part of a school project.
