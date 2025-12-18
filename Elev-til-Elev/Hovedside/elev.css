@@ -1,0 +1,241 @@
+:root{
+  --bg: #f6f7f8;
+  --card: #ffffff;
+  --text: #1b1b1b;
+  --muted: #666868;
+  --accent: #2f6fa6;
+  --nav-dark: #ffffff;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* ---------- HEADER ---------- */
+header{
+  position:sticky;
+  top:0;
+  z-index:40;
+  background:var(--nav-dark);
+  border-bottom:1px solid #e6e6e6;
+  box-shadow: 0 2px 6px rgba(20,20,20,0.03);
+}
+.navbar{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:10px 20px;
+}
+.left-nav, .right-nav{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.left-nav a, .right-nav a{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.95rem;
+  padding:6px 8px;
+  border-radius:6px;
+}
+.left-nav a:hover, .right-nav a:hover{
+  background:linear-gradient(90deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02));
+}
+.logo-container img{
+  height:75px;
+  width:auto;
+  display:block;
+  margin-right: 20px;
+}
+.login-btn{
+  border:1px solid #cfcfcf;
+  padding:8px 14px;
+  border-radius:8px;
+  background:transparent;
+  color:var(--text);
+  margin-left: 95px;
+}
+.register-btn{
+  padding:8px 14px;
+  border-radius:8px;
+  background: #a7dafd;
+  color:#fff;
+  border:1px solid rgba(0,0,0,0.05);
+}
+.register-btn:hover{filter:brightness(.95)}
+
+/* ---------- DROPDOWN FIXED ---------- */
+
+.dropdown{
+  position:relative;
+}
+
+.dropdown-btn{
+  cursor:pointer;
+}
+
+.dropdown-menu{
+  position:absolute;
+  top:calc(100% + 10px);
+  left:0;
+  width:260px;
+  background:var(--card);
+  border-radius:10px;
+  padding:8px 0;
+  box-shadow:0 12px 30px rgba(18,24,32,0.08);
+  display:none;
+  opacity:0;
+  transform:translateY(-6px);
+  transition:opacity .18s ease, transform .18s ease;
+  z-index:200;
+}
+
+/* Når dropdown er aktiv */
+.dropdown.open .dropdown-menu{
+  display:block;
+  opacity:1;
+  transform:translateY(0);
+}
+
+.dropdown-menu li{
+  list-style:none;
+}
+
+.dropdown-menu a{
+  display:block;
+  padding:10px 16px;
+  text-decoration:none;
+  color:var(--text);
+  border-radius:6px;
+  font-weight:500;
+}
+
+.dropdown-menu a:hover{
+  background:#f2f7fb;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  padding:96px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border-bottom:1px solid #ececec;
+}
+.hero-inner{
+  max-width:980px;
+  margin:0 auto;
+  text-align:center;
+}
+.hero h1{
+  font-size:2.6rem;
+  margin:0;
+  font-weight:700;
+  color:var(--text);
+}
+.hero p{
+  color:var(--muted);
+  margin-top:12px;
+  font-size:1.05rem;
+}
+.hero-cta{
+  display:inline-block;
+  margin-top:22px;
+  padding:12px 22px;
+  border-radius:9px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  box-shadow:0 8px 18px rgba(47,111,166,0.12);
+}
+.hero-cta:hover{ transform:translateY(-3px); }
+
+/* ---------- INFO GRID ---------- */
+.info-grid{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 20px 60px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:22px;
+}
+.info-card{
+  background:var(--card);
+  padding:22px;
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(18,24,32,0.04);
+  border: 1px solid #f0f0f0;
+}
+
+/* ---------- ACCORDION ---------- */
+.accordion-btn{
+  width:100%;
+  background:transparent;
+  border:none;
+  font-weight:600;
+  font-size:1.1rem;
+  text-align:left;
+  padding:12px 0;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.accordion-content{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .35s ease, padding .35s ease;
+}
+
+.accordion.active .accordion-content{
+  max-height:200px;
+  padding-top:10px;
+}
+
+.accordion .arrow{
+  transition:transform .3s ease;
+}
+
+.accordion.active .arrow{
+  transform:rotate(180deg);
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+  border-top:1px solid #e6e6e6;
+  background:var(--nav-dark);
+  padding:22px 0;
+  margin-top:30px;
+}
+.footer-inner{
+  max-width:1200px;
+  margin:0 auto;
+  text-align:center;
+  color:var(--muted);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:920px){
+  .logo-container img{ height:48px }
+}
+
+@media (max-width:640px){
+  .navbar{
+    flex-direction:column;
+    gap:10px;
+  }
+}

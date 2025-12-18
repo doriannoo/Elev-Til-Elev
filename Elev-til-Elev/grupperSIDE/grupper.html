@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Elev til Elev – Grupper</title>
+<link rel="stylesheet" href="grupper.css" />
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header>
+    <nav class="navbar">
+        <ul class="left-nav">
+            <li><a href="../Hovedside/elev.html">Hjem</a></li>
+
+            <li class="dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                <a class="dropdown-btn">Utforsk grupper ▾</a>
+                <ul class="dropdown-menu" role="menu" aria-label="VGS-linjer">
+
+                    <!-- OPPDATERT: Lenker sender med filter-parameter -->
+                    <li><a href="grupper.html?filter=studiesp" role="menuitem">Studiespesialisering</a></li>
+                    <li><a href="grupper.html?filter=it" role="menuitem">Informasjonsteknologi og medieproduksjon</a></li>
+                    <li><a href="grupper.html?filter=elektro" role="menuitem">Elektro og datateknologi</a></li>
+                    <li><a href="grupper.html?filter=bygg" role="menuitem">Bygg- og anleggsteknikk</a></li>
+                    <li><a href="grupper.html?filter=helse" role="menuitem">Helse- og oppvekstfag</a></li>
+                    <li><a href="grupper.html?filter=rest" role="menuitem">Restaurant- og matfag</a></li>
+                    <li><a href="grupper.html?filter=salg" role="menuitem">Salg, service og reiseliv</a></li>
+                    <li><a href="grupper.html?filter=kunst" role="menuitem">Kunst, design og arkitektur</a></li>
+                    <li><a href="grupper.html?filter=ti" role="menuitem">Teknologi- og industrifag</a></li>
+                    <li><a href="grupper.html?filter=pab" role="menuitem">Påbygging til generell studiekompetanse</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <div class="logo-container">
+            <img src="../Hovedside/logo/ElevLogo2.png" alt="Elev til Elev logo" />
+        </div>
+
+        <ul class="right-nav">
+            <li><a href="#" class="login-btn">Logg inn</a></li>
+            <li><a href="#" class="register-btn">Registrer</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <h1>Finn gruppechatten din</h1>
+        <p>Velg linje/fag og finn hjelp fra andre elever.</p>
+    </div>
+</section>
+
+<!-- FILTER -->
+<section class="filter-section">
+    <div class="filter-inner">
+
+        <!-- Søk -->
+        <input type="text" id="searchInput" class="searchbar" placeholder="Søk i gruppechatter..." />
+
+        <!-- FILTER DROPDOWN -->
+        <select id="lineFilter" class="filter-dropdown">
+            <option value="all">Alle kategorier</option>
+
+            <optgroup label="Realfag">
+                <option value="matte">Matte</option>
+                <option value="fysikk">Fysikk</option>
+                <option value="kjemi">Kjemi</option>
+                <option value="engelsk">Engelsk</option>
+            </optgroup>
+
+            <optgroup label="VGS-linjer">
+                <option value="studiesp">Studiespesialisering</option>
+                <option value="it">IT & Medieproduksjon</option>
+                <option value="elektro">Elektro og datateknologi</option>
+                <option value="bygg">Bygg & Anlegg</option>
+                <option value="helse">Helse & Oppvekstfag</option>
+                <option value="rest">Restaurant & Matfag</option>
+                <option value="salg">Salg, Service & Reiseliv</option>
+                <option value="kunst">Kunst, Design & Arkitektur</option>
+                <option value="ti">Teknologi & Industrifag</option>
+                <option value="pab">Påbygg</option>
+            </optgroup>
+        </select>
+    </div>
+</section>
+
+<!-- GRUPPER GRID -->
+<section class="group-grid">
+
+    <!-- REALFAG -->
+    <div class="group-card" data-category="matte">
+        <h3>Sliter med algebra – noen som kan hjelpe? 🙏</h3>
+        <p>Realfag – matte • 3/6 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="fysikk">
+        <h3>Hva betyr egentlig Newtons 3. lov?🤷‍♂️</h3>
+        <p>Realfag – fysikk • 2/5 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="kjemi">
+        <h3>Trenger hjelp med organiske molekyler 😭</h3>
+        <p>Realfag – kjemi • 1/4 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="engelsk">
+        <h3>Kan noen lese korrektur på essayet mitt? 📝</h3>
+        <p>Realfag – engelsk • 4/6 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <!-- VGS-LINJER -->
+    <div class="group-card" data-category="it">
+        <h3>Hvordan lager man responsiv layout i CSS? 💻</h3>
+        <p>IT & Medieproduksjon • 5/6 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="studiesp">
+        <h3>Hvordan strukturere en god historieanalyse?</h3>
+        <p>Studiespesialisering • 2/5 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="elektro">
+        <h3>Sliter med kretsdiagram – noen som kan forklare?</h3>
+        <p>Elektro & datateknologi • 1/5 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="bygg">
+        <h3>Noen som har erfaring med byggetegninger?</h3>
+        <p>Bygg & Anlegg • 4/6 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="helse">
+        <h3>Hvordan skriver man refleksjonsnotat? 🩺</h3>
+        <p>Helse & oppvekst • 3/5 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="rest">
+        <h3>Noen tips til hygieneprøven?</h3>
+        <p>Restaurant & matfag • 1/4 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="salg">
+        <h3>Hvordan skriver man markedsstrategi?</h3>
+        <p>Salg & service • 2/6 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="kunst">
+        <h3>Trenger feedback på et plakatdesign 🎨</h3>
+        <p>Kunst, design & arkitektur • 4/6 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="ti">
+        <h3>Hvordan beregne materialkostnader?</h3>
+        <p>TIF • 2/5 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+    <div class="group-card" data-category="pab">
+        <h3>Noen som kan hjelpe med påbygg-oppgaver?</h3>
+        <p>Påbygg • 1/6 hjelper</p>
+        <a href="#" class="join-btn">Bli med</a>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <p>© 2025 Elev til Elev — Elevdrevet læring.</p>
+    </div>
+</footer>
+
+<script src="grupper.js"></script>
+</body>
+</html>

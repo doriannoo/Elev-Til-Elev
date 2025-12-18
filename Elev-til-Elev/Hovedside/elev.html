@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elev til Elev</title>
+    <link rel="stylesheet" href="../Hovedside/elev.css" />
+</head>
+
+<body>
+
+    <!-- HEADER / NAV -->
+    <header>
+        <nav class="navbar">
+            <ul class="left-nav">
+                <li><a href="#">Hjem</a></li>
+
+                <li class="dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                    <a class="dropdown-btn">Utforsk grupper ▾</a>
+                    <ul class="dropdown-menu" role="menu" aria-label="VGS-linjer">
+                        <!-- Endret: lenker til grupper-siden med filter-parameter -->
+                        <li><a href="../grupperSIDE/grupper.html?filter=studiesp" role="menuitem">Studiespesialisering</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=itmed" role="menuitem">Informasjonsteknologi og medieproduksjon</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=elektro" role="menuitem">Elektro og datateknologi</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=bygg" role="menuitem">Bygg- og anleggsteknikk</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=helse" role="menuitem">Helse- og oppvekstfag</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=rest" role="menuitem">Restaurant- og matfag</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=salg" role="menuitem">Salg, service og reiseliv</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=kunst" role="menuitem">Kunst, design og arkitektur</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=ti" role="menuitem">Teknologi- og industrifag</a></li>
+                        <li><a href="../grupperSIDE/grupper.html?filter=pab" role="menuitem">Påbygging til generell studiekompetanse</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+
+            <div class="logo-container">
+                <img src="logo/ElevLogo2.png" alt="Elev til Elev logo" />
+            </div>
+
+            <ul class="right-nav">
+                <li><a href="#" class="login-btn">Logg inn</a></li>
+                <li><a href="#" class="register-btn">Registrer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>Velkommen til Elev til Elev</h1>
+                <p>Et trygt sted hvor elever hjelper elever. <br> Enkelt, og effektivt.</p>
+                <a href="../grupperSIDE/grupper.html" class="hero-cta">Kom i gang</a>
+            </div>
+        </section>
+
+        <!-- INFO GRID / ACCORDION -->
+        <section class="info-grid" aria-label="Informasjon">
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Hva vi gjør <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Vi kobler elever som trenger hjelp med elever som har kunnskap og erfaring i gruppechatter og
+                        små hjelpegrupper.</p>
+                </div>
+            </article>
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Funksjoner <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Opprett grupper, still spørsmål, del notater, og få hjelp i fag og prosjekter.</p>
+                </div>
+            </article>
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Hvordan det fungerer <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Registrer deg, finn en gruppe for din linje eller fag, bli med og spør, eller bli en hjelper
+                        selv.</p>
+                </div>
+            </article>
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Tips <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Spør konkret, del ressurser, og vær respektfull. Gi gjerne tilbake når du kan!</p>
+                </div>
+            </article>
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Bli med i diskusjoner <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Delta i faglige diskusjoner, del erfaringer og hjelp med skolearbeid. Lær sammen med andre
+                        elever.</p>
+                </div>
+            </article>
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Del ressurser <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Legg ut notater, videoer og tips som kan hjelpe andre elever. Gjør læring enklere for hele
+                        gruppen.</p>
+                </div>
+            </article>
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Trygghet først <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Alt innhold overvåkes og modereres for å sikre et trygt og vennlig miljø for alle elever.</p>
+                </div>
+            </article>
+
+            <article class="info-card accordion">
+                <button class="accordion-btn">Komme i gang raskt <span class="arrow">▾</span></button>
+                <div class="accordion-content">
+                    <p>Opprett konto, velg din linje, og bli med i relevante grupper på få minutter. Ingen komplisert
+                        oppsett.</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <p>© 2025 Elev til Elev — Elevdrevet læring.</p>
+        </div>
+    </footer>
+
+    <script src="../Hovedside/elev.js"></script>
+</body>
+
+</html>
